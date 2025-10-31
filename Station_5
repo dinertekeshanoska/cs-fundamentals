@@ -4,7 +4,7 @@
 Enter your query here.
 */
 // ----------------------------------------- //
-SELECT CITY
+SELECT DISTINCT CITY
 FROM STATION
 WHERE REGEXP_LIKE(CITY, '[aeiouAEIOU]$');
 // ----------------------------------------- //
