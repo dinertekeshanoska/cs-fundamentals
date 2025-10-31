@@ -1,0 +1,11 @@
+// https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true
+
+/*
+Enter your query here.
+*/
+// ------------------------------------- //
+SELECT DISTINCT CITY
+FROM STATION
+WHERE REGEXP_LIKE(CITY, '^[aeiouAEIOU]')
+AND REGEXP_LIKE(CITY, '[aeiouAEIOU]$');
+// ------------------------------------- //
